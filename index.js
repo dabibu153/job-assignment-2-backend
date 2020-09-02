@@ -15,6 +15,10 @@ app.use(express.json());
 
 app.use(cors());
 
+app.all("/", (req, res) => {
+  res.send("hello world!");
+});
+
 app.use("/api", employee);
 
 PORT = 5000;

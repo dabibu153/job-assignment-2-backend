@@ -2,10 +2,6 @@ const express = require("express");
 const router = express.Router();
 const { Employee } = require("./employeeModel");
 
-router.get("/", (req, res) => {
-  res.send("hello! i am working");
-});
-
 router.post("/addEmployee", async (req, res) => {
   console.log(req.body);
 
